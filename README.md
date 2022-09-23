@@ -25,3 +25,7 @@ To achieve this, we will need 5 smart-contracts on the blockchain, let’s defin
 4. Governance → Where proposals are created. In our example, there is an encoded function that will call on the treasury contract to release the funds.
 5. TimeLock → A time delay imposed by the governance before firing the encoded function, if the proposal passes.
 ```
+
+## Vesting Contracts
+
+VestingWallet `(contracts/finance/VestingContract.sol)` handles the vesting of native EVM tokens as well as ERC20 tokens for a given beneficiary. Custody of multiple tokens can be given to this contract, which will release the token to the beneficiary following a given, customizable, vesting schedule.
