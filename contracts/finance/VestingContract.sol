@@ -147,4 +147,3 @@ contract VestingWallet is Context {
         }
     }
 }
-Copied
